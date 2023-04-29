@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="main__compra">
+            <div class="compra__left">
+                <div>
+                    <h1 class="display-2">Galeria Impacto Periferico</h1>
+                    <label> O leilão se encerrará em {{contador}} segundos</label>
+                    <br>
+                    <label> Existem {{pessoas}} pessoas online no leilão</label>
+                </div>
+            </div>
+            <div class="compra__right">
+                <div class="card compra__right_card" style="width: 30rem;">
+                    <div>
+                        <button (click)="changeNft('-')" style="margin-right: 1rem; margin-bottom: 0.5rem;" class="btn btn-light">Anterior</button>
+                        <button (click)="changeNft('+')" style="margin-bottom: 0.5rem" class="btn btn-light">Próximo</button>
+                    </div>
+                    <div>
+                        <img class="card-img-top nft__image" [src]="this.choosedNft.image" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <label class="card-text display-5">{{this.choosedNft.title}}</label>
+                      <br>
+                      <label class="card-text">{{this.choosedNft.author}}</label>
+                      <br>
+                      <label class="card-text">{{this.choosedNft.description}}</label>
+                      <br>
+                      <label class="card-text">R$: {{this.choosedNft.value}}</label>
+                      <br>
+                      <br>
+                      <button class="btn__compra">Dar um Lance</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

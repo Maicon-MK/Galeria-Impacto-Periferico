@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&family=Zilla+Slab&display=swap');
+
+.main__compra{
+    display: flex;
+    background-color: var(--background-default);
+    color: var(--background-nav);
+    font-family: 'Short Stack', cursive;
+    font-family: 'Zilla Slab', serif;
+    padding: 5rem;
+}
+
+.compra__left{
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.compra__right{
+    flex: 1;
+    text-align: center;
+}
+
+.nft__image{
+    width: 200px;
+}
+
+.compra__right_card{
+    justify-content: center;
+    color: var(--background-nav);
+    background-color: var(--background-default);
+}
+
+.btn__compra{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem; 
+    border-radius: 1rem;
+    font-family: 'Short Stack', cursive;
+    font-family: 'Zilla Slab', serif;
+    font-size: 150%;
+ }
+
+ .btn__compra:hover{
+    background-color: var(--blue-hover);
+  }

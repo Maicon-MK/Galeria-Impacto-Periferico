@@ -3,17 +3,18 @@
         <div class="main__navbar">
             <div class="left__navbar">
                 <ul class="navbar__elements">
-                    <li class="navbar__elements_li">Galeria</li>
+                    <li (click)="galery()" class="navbar__elements_li">Galeria</li>
                     <li class="navbar__elements_li">Coleção</li>
                     <li class="navbar__elements_li">Artistas</li>
                     <li class="navbar__elements_li">Contato</li>
                     <li class="navbar__elements_li">Lance</li>
+                    <li (click)="callCompra()" class="navbar__elements_li">Compra</li>
                 </ul>
             </div>
             <div class="right__navbar">
-                <button (click)="connect()" class="btn__navbar">Conectar</button>
+                <button *ngIf="!showModal" (click)="connect()" class="btn__navbar">Conectar</button>
             </div>
+            <app-connect-wallet *ngIf="showModal" (walletEvent)="onChildEvent($event)"></app-connect-wallet>
         </div>
     </div>
-    
 </div>

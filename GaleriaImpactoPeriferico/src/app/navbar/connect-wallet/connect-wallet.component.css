@@ -1,0 +1,22 @@
+.wallets{
+    display: flex;
+}
+
+.metamask__logo{
+    width: 50px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.metamask__logo:hover{
+    opacity: 0.5;
+}
+
+.oneinch__logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+.oneinch__logo:hover{
+    opacity: 0.5;
+}
