@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&family=Zilla+Slab&display=swap');
+
+.main__navbar{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left__navbar{
+
+}
+
+.right__navbar{
+
+}
+
+.navbar__elements{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__elements_li{
+    margin-right: 2rem;
+    list-style: none;
+    cursor: pointer;
+    font-family: 'Short Stack', cursive;
+    font-family: 'Zilla Slab', serif;
+    font-size: 150%;
+}
+
+.navbar__elements_li:hover{
+    color: var(--blue-hover);
+}
+
+.container-fluid{
+    background-color: var(--background-nav);
+    color: var(--text-nav);
+}
+
+.btn__navbar{
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   padding-left: 2rem;
+   padding-right: 2rem; 
+   border-radius: 1rem;
+   font-family: 'Short Stack', cursive;
+   font-family: 'Zilla Slab', serif;
+   font-size: 150%;
+}
+
+.btn__navbar:hover{
+  background-color: var(--blue-hover);
+}
+
+@media only screen and (max-width: 768px) {
+    .main__navbar{
+        padding: 3rem;
+        display: flex;
+    }
+    .right__navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .navbar__elements{
+        display: inline;
+        justify-content: center;
+    }    
+  }
