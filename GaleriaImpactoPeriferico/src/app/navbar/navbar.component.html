@@ -14,6 +14,7 @@
             <div class="right__navbar">
                 <button *ngIf="!showModal" (click)="connect()" class="btn__navbar">Conectar</button>
             </div>
+            <div class="login-with-1inch-btn" data-button-type="compact"></div>
             <app-connect-wallet *ngIf="showModal" (walletEvent)="onChildEvent($event)"></app-connect-wallet>
         </div>
     </div>

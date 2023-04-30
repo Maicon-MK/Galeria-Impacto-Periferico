@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "@1inch/fusion-sdk": "^0.1.5",
     "@angular/animations": "^14.0.0",
     "@angular/common": "^14.0.0",
     "@angular/compiler": "^14.0.0",
@@ -19,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
     "@metamask/detect-provider": "^2.0.0",
+    "@openzeppelin/contracts": "^4.8.3",
     "@walletconnect/client": "^1.8.0",
     "@walletconnect/web3-provider": "^1.8.0",
     "bootstrap": "^5.2.3",

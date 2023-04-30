@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MockNftsService } from '../services/mock-nfts.service';
 import { nft } from '../models/nft';
+import { NftService } from '../services/nft.service';
 
 @Component({
   selector: 'app-compra',
@@ -20,6 +21,11 @@ export class CompraComponent implements OnInit {
     this.contagemPessoas();
     this.getMocks();
     this.chooseNft();
+    this.getNfts();
+  }
+
+  getNfts(){
+    debugger;
   }
 
   contagemRegressiva(){
@@ -35,7 +41,6 @@ export class CompraComponent implements OnInit {
   }
 
   getMocks(){
-    debugger;
     this.nfts = this.mockNft.nftArray;
   }
 
@@ -46,7 +51,6 @@ export class CompraComponent implements OnInit {
 
   changeNft(signal:string){
     this.position;
-    debugger;
     if(this.position >= 4){
       this.position = 0
       return;
